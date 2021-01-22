@@ -1,0 +1,194 @@
+<div class="my-2" *ngIf="isEditing">
+  <div class="row">
+    <div class="col-6">
+      <div class="form-group row">
+        <label for="firstname" class="col-sm-2 col-form-label">Firstname</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="firstname" [(ngModel)]="editEmpl.firstName"></div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="form-group row">
+        <label for="lastname" class="col-sm-2 col-form-label">Lastname</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="lastname" [(ngModel)]="editEmpl.lastName"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <div class="form-group row">
+        <label for="birthday" class="col-sm-2 col-form-label">Birthday</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="birthday" [(ngModel)]="editEmpl.birthday"></div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="form-group row">
+        <label for="gender" class="col-sm-2 col-form-label">Gender</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="gender" [(ngModel)]="editEmpl.gender.type"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <div class="form-group row">
+        <label for="jobcategory" class="col-sm-2 col-form-label">Job Category</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="jobcategory" [(ngModel)]="editEmpl.jobCategory.title"></div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="form-group row">
+        <label for="email" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="email" [(ngModel)]="editEmpl.email"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <div class="form-group row">
+        <label for="phonenumber" class="col-sm-2 col-form-label">Phonenumber</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="phonenumber" [(ngModel)]="editEmpl.phoneNumber"></div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="form-group row">
+        <label for="country" class="col-sm-2 col-form-label">Country</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="country" [(ngModel)]="editEmpl.country.name"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <div class="form-group row">
+        <label for="joindate" class="col-sm-2 col-form-label">Join Date</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="joindate" [(ngModel)]="editEmpl.joinDate"></div>
+      </div>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-outline-dark text-color" (click)="editedEmpl(editEmpl)">Submit</button>
+  <button type="submit" class="btn btn-outline-dark mx-2 text-color" (click)="cancel()">Cancel</button>
+</div>
+
+<div class="my-2" *ngIf="isDisplaying">
+  <div class="row">
+    <div class="col-6">
+      <div class="form-group row">
+        <label for="firstname" class="col-sm-2 col-form-label">Firstname</label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control" id="firstname" [(ngModel)]="editEmpl.firstName"></div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="form-group row">
+        <label for="lastname" class="col-sm-2 col-form-label">Lastname</label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control" id="lastname" [(ngModel)]="editEmpl.lastName"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <div class="form-group row">
+        <label for="birthday" class="col-sm-2 col-form-label">Birthday</label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control" id="birthday" [(ngModel)]="editEmpl.birthday"></div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="form-group row">
+        <label for="gender" class="col-sm-2 col-form-label">Gender</label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control" id="gender" [(ngModel)]="editEmpl.gender.type"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <div class="form-group row">
+        <label for="jobcategory" class="col-sm-2 col-form-label">Job Category</label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control" id="jobcategory" [(ngModel)]="editEmpl.jobCategory.title">
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="form-group row">
+        <label for="email" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control" id="email" [(ngModel)]="editEmpl.email"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <div class="form-group row">
+        <label for="phonenumber" class="col-sm-2 col-form-label">Phonenumber</label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control" id="phonenumber" [(ngModel)]="editEmpl.phoneNumber">
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="form-group row">
+        <label for="country" class="col-sm-2 col-form-label">Country</label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control" id="country" [(ngModel)]="editEmpl.country.name">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <div class="form-group row">
+        <label for="joindate" class="col-sm-2 col-form-label">Join Date</label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control" id="joindate" [(ngModel)]="editEmpl.joinDate">
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-outline-dark" (click)="cancelView()">Cancel</button>
+</div>
+
+
+
+<table class="table table-hover">
+  <thead>
+    <tr class="text-color">
+      <th scope="col ">Id</th>
+      <th scope="col">Firstname</th>
+      <th scope="col">Lastname</th>
+      <th scope="col">JobCategory</th>
+      <th scope="col">Date of Birth</th>
+      <th scope="col mx-2">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let empl of employees$ | async">
+      <th scope="row">{{empl.id}}</th>
+      <td>{{empl.firstName}}</td>
+      <td>{{empl.lastName}}</td>
+      <td>{{empl.jobCategory.title}}</td>
+      <td>{{empl.birthday}}</td>
+      <td> <button type="button" class="btn btn-outline-dark text-color " (click)="editEmployee(empl)">Edit</button>
+        <button type="button" class="btn btn-outline-dark mx-2 text-color"
+          (click)="deleteEmployee(empl)">Delete</button>
+        <button button type="button" class="btn btn-outline-dark  text-color"
+          (click)="displayEmployee(empl)">View</button></td>
+    </tr>
+  </tbody>
+</table>

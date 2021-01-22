@@ -1,0 +1,15 @@
+.text-color{
+    color:#2e3636;
+     font-weight: bold;
+}
+
+.btn-outline-dark{
+    width: auto;
+    margin-top:2px;
+    color:#2b7a7a;
+    border-color: black;
+}
+
+.table td{
+    border-top:1px solid,rgb(3, 57, 73)
+}

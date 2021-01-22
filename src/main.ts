@@ -10,3 +10,9 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+
+const arr = [null,2,3,4,5];
+const newArr = arr.filter((row) => row !== null);
+
+console.log(arr, newArr)

@@ -1,0 +1,166 @@
+{
+  "employees": [
+    {
+      "id": 0,
+      "firstName": "Kamil",
+      "lastName": "Bezrouk",
+      "birthday": "2.4.1990",
+      "gender": {
+        "type": "Male"
+      },
+      "jobCategory": {
+        "id": 1,
+        "title": "Programmer"
+      },
+      "email": "kamil.bezrouk@gmail.com",
+      "phoneNumber": 777589632,
+      "country": {
+        "id": 1,
+        "name": "Czech Republic"
+      },
+      "joinDate": "01.01.2018"
+    },
+    {
+      "id": 1,
+      "firstName": "Monika",
+      "lastName": "Rosemary",
+      "birthday": "2.3.1986",
+      "gender": {
+        "type": "Female"
+      },
+      "jobCategory": {
+        "id": 2,
+        "title": "Manager"
+      },
+      "email": "rosemary.mon@gmail.com",
+      "phoneNumber": 725896147,
+      "country": {
+        "id": 2,
+        "name": "Germany"
+      },
+      "joinDate": "1.5.2018"
+    },
+    {
+      "id": 2,
+      "firstName": "Jan",
+      "lastName": "Kulhánek",
+      "birthday": "3.8.1970",
+      "gender": {
+        "type": "Male"
+      },
+      "jobCategory": {
+        "id": 1,
+        "title": "Programmer"
+      },
+      "email": "jan.kulhan@gmail.com",
+      "phoneNumber": 603455263,
+      "country": {
+        "id": 1,
+        "name": "Czech Republic"
+      },
+      "joinDate": "1.1.2016"
+    },
+    {
+      "id": 3,
+      "firstName": "Marion",
+      "lastName": "Nowak",
+      "birthday": "9.9.1982",
+      "gender": {
+        "type": "Female"
+      },
+      "jobCategory": {
+        "id": 2,
+        "title": "Manager"
+      },
+      "email": "nowakmarion@gmail.com",
+      "phoneNumber": 859695234,
+      "country": {
+        "id": 3,
+        "name": "Poland"
+      },
+      "joinDate": "1.7.2016"
+    }
+  ],
+  "employees2": [
+    {
+      "id": 1,
+      "firstName": "Kamil",
+      "lastName": "Bezrouk",
+      "birthday": "2.4.1990",
+      "gender": {
+        "type": "Male"
+      },
+      "jobCategory": {
+        "id": 1,
+        "title": "Programmer"
+      },
+      "email": "kamil.bezrouk@gmail.com",
+      "phoneNumber": 777589632,
+      "country": {
+        "id": 1,
+        "name": "Czech Republic"
+      },
+      "joinDate": "20180101"
+    },
+    {
+      "id": 2,
+      "firstName": "Monika",
+      "lastName": "Rosemary",
+      "birthday": "2.3.1986",
+      "gender": {
+        "type": "Female"
+      },
+      "jobCategory": {
+        "id": 2,
+        "title": "Manager"
+      },
+      "email": "rosemary.mon@gmail.com",
+      "phoneNumber": 725896147,
+      "country": {
+        "id": 2,
+        "name": "Germany"
+      },
+      "joinDate": "1.5.2018"
+    },
+    {
+      "id": 3,
+      "firstName": "Jan",
+      "lastName": "Kulhánek",
+      "birthday": "3.8.1970",
+      "gender": {
+        "type": "Male"
+      },
+      "jobCategory": {
+        "id": 1,
+        "title": "Programmer"
+      },
+      "email": "jan.kulhan@gmail.com",
+      "phoneNumber": 603455263,
+      "country": {
+        "id": 1,
+        "name": "Czech Republic"
+      },
+      "joinDate": "1.1.2016"
+    },
+    {
+      "id": 4,
+      "firstName": "Marion",
+      "lastName": "Nowak",
+      "birthday": "9.9.1982",
+      "gender": {
+        "type": "Female"
+      },
+      "jobCategory": {
+        "id": 2,
+        "title": "Manager"
+      },
+      "email": "nowakmarion@gmail.com",
+      "phoneNumber": 859695234,
+      "country": {
+        "id": 3,
+        "name": "Poland"
+      },
+      "joinDate": "1.7.2016"
+    }
+  ]
+}
